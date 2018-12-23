@@ -1,0 +1,10 @@
+.section {
+  min-height: 70vh;
+  border: 7px solid black;
+  margin: 10px;
+  padding: 20px;
+}
+
+.section h1 {
+  text-align: center;
+}
