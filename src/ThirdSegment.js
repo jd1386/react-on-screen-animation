@@ -17,7 +17,7 @@ class ThirdSegment extends Component {
               <Spring
                 from={{ number: 0 }}
                 to={{ number: 72 }}
-                delay={200}
+                delay={100}
                 config={config.molasses}
               >
                 {springProps => {
@@ -27,7 +27,6 @@ class ThirdSegment extends Component {
               <span>Countries</span>
             </div>
             <div style={{ fontSize: '3em' }}>
-              including..
               <Spring
                 from={{ opacity: 0 }}
                 to={{ opacity: 1 }}
@@ -39,7 +38,7 @@ class ThirdSegment extends Component {
               <Spring
                 from={{ opacity: 0 }}
                 to={{ opacity: 1 }}
-                delay={200}
+                delay={400}
                 config={config.molasses}
               >
                 {props => <div style={props}>China</div>}
@@ -47,10 +46,34 @@ class ThirdSegment extends Component {
               <Spring
                 from={{ opacity: 0 }}
                 to={{ opacity: 1 }}
-                delay={200}
+                delay={600}
                 config={config.molasses}
               >
                 {props => <div style={props}>Japan</div>}
+              </Spring>
+              <Spring
+                from={{ opacity: 0 }}
+                to={{ opacity: 1 }}
+                delay={800}
+                config={config.molasses}
+              >
+                {props => <div style={props}>Taiwan</div>}
+              </Spring>
+              <Spring
+                from={{ opacity: 0 }}
+                to={{ opacity: 1 }}
+                delay={1000}
+                config={config.molasses}
+              >
+                {props => <div style={props}>Hong Kong</div>}
+              </Spring>
+              <Spring
+                from={{ opacity: 0 }}
+                to={{ opacity: 1 }}
+                delay={1200}
+                config={config.molasses}
+              >
+                {props => <div style={props}>and many others</div>}
               </Spring>
             </div>
           </React.Fragment>
