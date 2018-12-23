@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Spring, config } from 'react-spring';
 
-class ThirdSegment extends Component {
+export default class ThirdSegment extends Component {
   render() {
     const style = this.props.isVisible
       ? { background: '#fff' }
@@ -11,8 +11,8 @@ class ThirdSegment extends Component {
       <div className="section" style={style}>
         <h3>Third segment {this.props.isVisible && 'is now visible'}</h3>
         {this.props.isVisible && (
-          <React.Fragment>
-            <div style={{ fontSize: '3em' }}>
+          <div style={{ fontSize: '3em' }}>
+            <div>
               Popular in{' '}
               <Spring
                 from={{ number: 0 }}
@@ -26,7 +26,7 @@ class ThirdSegment extends Component {
               </Spring>{' '}
               <span>Countries</span>
             </div>
-            <div style={{ fontSize: '3em' }}>
+            <div>
               <Spring
                 from={{ opacity: 0 }}
                 to={{ opacity: 1 }}
@@ -76,11 +76,9 @@ class ThirdSegment extends Component {
                 {props => <div style={props}>and many others</div>}
               </Spring>
             </div>
-          </React.Fragment>
+          </div>
         )}
       </div>
     );
   }
 }
-
-export default ThirdSegment;

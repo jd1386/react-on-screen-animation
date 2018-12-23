@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Spring, config } from 'react-spring';
 
-class FirstSegment extends Component {
+export default class FirstSegment extends Component {
   render() {
     const style = this.props.isVisible
       ? { background: '#fff' }
@@ -31,5 +31,3 @@ class FirstSegment extends Component {
     );
   }
 }
-
-export default FirstSegment;
